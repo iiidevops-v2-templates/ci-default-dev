@@ -1,6 +1,6 @@
 include:
   - project: 'iiidevops-templates/ci-template'
-    ref: 'v2.0.0'
+    ref: 'v2.1.0'
     file: 'ci/template.gitlab-ci.yml'
 
 stages:
@@ -53,14 +53,14 @@ Test--Anchore SBOM:
   variables:
     iiidevops: anchore
   only:
-   - skip
+    - skip
 
 Test--ZAP:
   variables:
     iiidevops: zap
     CHART_WEB_PORT: 80
   only:
-   - skip
+    - skip
 
 Test--WebInspect:
   variables:
@@ -73,12 +73,12 @@ Test--Postman:
     iiidevops: postman
     CHART_WEB_PORT: 80
   only:
-   - skip
+    - skip
 
 Test--Sideex:
   variables:
     iiidevops: sideex
     CHART_WEB_PORT: 80
   only:
-   - skip
+    - skip
 
