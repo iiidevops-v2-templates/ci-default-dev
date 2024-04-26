@@ -1,4 +1,4 @@
-FROM dockerhub/library/php:7.4.33-cli-alpine3.16
+FROM dockerhub/library/php:8.3.4-cli-alpine3.19
 
 RUN apk update && apk upgrade
 COPY app /var/www/html
